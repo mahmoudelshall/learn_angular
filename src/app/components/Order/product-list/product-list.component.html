@@ -8,6 +8,8 @@
         <th>Price</th>
         <th>CategoryID</th>
         <th>Image</th>
+        <th>Count</th>
+        <th>Buy</th>
       </tr>
     </thead>
     <tbody >
@@ -18,6 +20,9 @@
             <td>{{product.price}} $</td>
             <td>{{product.categoryID}}</td>
             <td><img [src]="product.imgURL" alt=""></td>
+            <td><input #itemsCount type="number" class="form-control"></td>
+            <td><button type="button" class="btn btn-secondary" (click)="buy(product.id, itemsCount.value)" >Buy</button></td>
+
         </tr>
     </tbody>
   </table>

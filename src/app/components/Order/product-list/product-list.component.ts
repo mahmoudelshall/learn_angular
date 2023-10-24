@@ -19,4 +19,8 @@ export class ProductListComponent {
       {id :600, name:'Samsung S22 Utlra', price:600, quantity:1, imgURL:"https://picsum.photos/id/80/200/100", categoryID:1 },
     ];
   }
+
+  buy(id:number, count:any){
+
+  }
 }
